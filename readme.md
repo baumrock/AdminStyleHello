@@ -12,7 +12,7 @@ The simplest admin style module you can get looks like this:
 namespace ProcessWire;
 
 // load the AdminStyle trait
-require_once $this->wire->config->paths->siteModules . "Less/AdminStyle.php";
+require_once wire()->config->paths->siteModules . "Less/AdminStyle.php";
 class AdminStyleHello extends WireData implements Module
 {
   // use the AdminStyle trait
@@ -22,7 +22,7 @@ class AdminStyleHello extends WireData implements Module
   {
     return [
       'title' => 'AdminStyleHello',
-      'version' => '0.0.2',
+      'version' => '0.0.3',
       'summary' => 'Hello World AdminStyle Module',
       'autoload' => true,
       'singular' => true,
