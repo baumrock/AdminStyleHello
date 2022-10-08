@@ -17,18 +17,20 @@ class AdminStyleHello extends WireData implements Module
   {
     return [
       'title' => 'AdminStyleHello',
-      'version' => '0.0.1',
+      'version' => '0.0.2',
       'summary' => 'Hello World AdminStyle Module',
       'autoload' => true,
       'singular' => true,
       'icon' => 'smile-o',
-      'requires' => [],
-      'installs' => [],
+      'requires' => [
+        'ProcessWire>=3.0.178',
+        'Less>=4',
+      ],
     ];
   }
 
-  public function getStyle()
+  public function ready()
   {
-    return __DIR__ . "/style/hello.less";
+    $this->loadStyle(__DIR__ . "/style/hello.less");
   }
 }
