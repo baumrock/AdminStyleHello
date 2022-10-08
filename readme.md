@@ -58,7 +58,7 @@ And a simple less file could look like this:
 @global-font-family: "Caveat";
 ```
 
-<img src=https://i.imgur.com/dDHqiDS.png height=600>
+<img src=https://i.imgur.com/dDHqiDS.png style="max-height:600px">
 
 ## Advanced
 
