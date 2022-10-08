@@ -60,6 +60,19 @@ And a simple less file could look like this:
 
 <img src=https://i.imgur.com/dDHqiDS.png style="max-height:600px">
 
+## Variables
+
+If you want to set LESS variables from PHP just implement the `getStyleVars()` method in your module:
+
+```php
+public function getStyleVars(): array
+{
+  return [
+    'rock-primary' => 'red',
+  ];
+}
+``` 
+
 ## Advanced
 
 For more advanced concepts see [AdminStyleRock](https://github.com/baumrock/AdminStyleRock)
